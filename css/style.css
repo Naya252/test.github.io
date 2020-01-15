@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oswald:500|Roboto+Condensed:300,400,700&display=swap");
+.link_btn2, header .link_btn {
+  transition: all 0.5s ease;
+  border-radius: 0.5em;
+  border: solid 1px red;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+button:active, button:hover, a:active, a:hover {
+  outline: 0;
+}
+
+.wrap {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 70%;
+}
+
+header .nav .my_nav_drop, header .nav .my_nav {
+  color: black;
+  font-size: 1.4rem;
+  transition: all 1s ease;
+}
+header .nav .my_nav {
+  font-weight: bold;
+}
+header .nav .my_nav:hover, header .nav .my_nav_drop:hover {
+  color: #807676;
+}
+header .nav .dropdown__menu {
+  border: solid 1px red;
+}
+header .nav .nav li:active {
+  background: lightgrey;
+}
+header .link_btn {
+  color: #0f0f0f;
+  line-height: 0.8em;
+}
+header .link_btn:hover {
+  color: white;
+  background: red;
+}
+.link_btn2:hover {
+  color: white;
+  font-size: 1.35em;
+}
+
+.block__slider {
+  background-color: #6c7074;
+  overflow: hidden;
+  height: 85vh;
+  border-radius: 70%/0 0 10% 10%;
+  position: relative;
+}
+
+.link_btn2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em;
+  color: white;
+  background: red;
+}
+
+.block__slider1 {
+  height: 85vh;
+  background: #6c7074 url(../img/LK_0012.jpg) no-repeat center center/cover;
+}
+
+.block__slider2 {
+  height: 85vh;
+  background: #6c7074 url(../img/LK_00001.jpg) no-repeat center top/cover;
+}
+
+.block__slider3 {
+  height: 85vh;
+  background: #6c7074 url(../img/LK_0441.jpg) no-repeat center center/cover;
+}
+
+.slider__page {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.slider__numpage_first {
+  font-size: 2em;
+}
+
+.slider__numpage_last {
+  font-size: 1.2em;
+}
+
+.slider__banner {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 70%/0 0 10% 10%;
+  font-family: "Oswald", sans-serif;
+}
+
+.slider__banner h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 6px black;
+  color: white;
+}
+
+.slider__banner p {
+  font-size: 1.5em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  margin-bottom: 0;
+}
+
+.cont {
+  font-size: 1.5em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+.slider__round {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  position: relative;
+  z-index: 10;
+}
+
+.bird {
+  width: 1em;
+  height: 1em;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+
+@media screen and (max-width: 1065px) {
+	.slider__page, .wrap  {
+		max-width: 100%;
+  }
+  
+  .slider__banner h1 {
+    font-size: 2.0em;   
+  }
+  
+  .slider__banner p {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+
+  .slider__banner h1 {
+    font-size: 1.6em;   
+  }
+  
+  .slider__banner p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 881px) {
+
+  .slider__banner h1 {
+    font-size: 1.6em;   
+  }
+  
+  .slider__banner p, .slider__page p {
+    font-size: 1em;
+  }
+
+  .my_nav {
+    font-size: 1em;
+  }
+
+  .slider__numpage_first {
+    font-size: 1.5em;
+  }
+  
+  .slider__numpage_last {
+    font-size: 1em;
+  }
+
+  header .nav .my_nav_drop, header .nav .my_nav, .link_btn {
+    font-size: 1rem;
+  }
+
+  .link_btn {
+    padding: .5em;
+  }
+
+  .wrap {
+    padding-top: .5em;
+  }
+}
+
+@media screen and (max-width: 715px) {
+
+  .slider__banner h1 {
+    font-size: 1.2em;   
+  }
+  
+  .slider__banner p, .slider__page p {
+    font-size: .8em;
+  }
+
+  .my_nav {
+    font-size: .8em;
+  }
+
+  .slider__numpage_first {
+    font-size: 1.2em;
+  }
+  
+  .slider__numpage_last {
+    font-size: .8em;
+  }
+
+  header .nav .my_nav_drop, header .nav .my_nav, .link_btn {
+    font-size: .8rem;
+  }
+
+  .link_btn {
+    padding: .5em;
+  }
+
+  .wrap {
+    padding-top: .5em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .nav {
+    display: none;
+  }
+
+  .link_btn, .link_btn2 {
+    padding: .5em;
+    font-size: .8rem;
+  }
+
+  .slider__banner h1 {
+    font-size: 1.2em;   
+  }
+  
+  .mediaM {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .slider__banner h1 {
+    font-size: 1em;   
+  }
+
+}
+
+
