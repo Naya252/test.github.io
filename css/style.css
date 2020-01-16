@@ -23,7 +23,7 @@ button:active, button:hover, a:active, a:hover {
 }
 
 .logo {
-  max-width: 70%;
+  max-width: 60%;
 }
 
 h1 {
@@ -282,6 +282,10 @@ header .link_btn:hover {
     font-size: 1em;   
   }
 
+  .logo {
+    max-width: 80%;
+  }
+
 }
 
 @media screen and (max-height: 450px) {
@@ -292,5 +296,10 @@ header .link_btn:hover {
 
 }
 
+@media screen and (max-width: 400px) {
+  .logo {
+    max-width: 100%;
+  }
+  
 
-
+}
