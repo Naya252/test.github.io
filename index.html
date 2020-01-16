@@ -11,19 +11,25 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row wrap">
+        <div class="navbar navbar-expand-sm">
+            <div id="container" class="container">
                 <div class="col-sm-2 col-4 d-flex align-items-center justify-content-start ml-0 pl-0">                    
                     <img class="logo" alt="logo" src="img/logo.png">                   
                 </div>
-                <div class="col-sm-8 col-6 d-flex align-items-center">
-                    <ul class="nav justify-content-between container-fluid">
+                <button class="navbar-toggler order-3 order-md-2" type="button" data-toggle="collapse"
+                    data-target="#navbar-example" aria-controls="navbar-example" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">X</span>
+                </button>
+                <div id="navbar-example" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav justify-content-between container-fluid">
                         <li class="nav-item ">
                             <a class="nav-link my_nav " href="#">Главная</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  my_nav active" data-toggle="dropdown" href="#">Услуги</a>
-                            <ul class="dropdown-menu dropdown__menu">
+                            <a class="nav-link  my_nav active" data-toggle="dropdown" id="navbarDropdown"
+                            role="button" href="#">Услуги</a>
+                            <ul class="dropdown-menu dropdown__menu" aria-labelledby="navbarDropdown">
                                 <li class="dropdown-item"><a class="nav-link my_nav_drop" href="#">Строительство подстанций</a></li>
                                 <li class="dropdown-item"><a class="nav-link my_nav_drop" href="#">Монтаж кабеля</a></li>
                                 <li class="dropdown-item"><a class="nav-link my_nav_drop" href="#">Электролаборатория</a></li>
@@ -42,12 +48,12 @@
                       </ul>
                 </div>
                 <div class="col-2 d-flex align-items-stretch justify-content-end">
-                    <button type="button" class="btn link_btn  py-1 px-3 my-2">заказать звонок</button>
+                    <button type="button" class="btn link_btn  px-lg-4 py-lg-3 py-1">заказать звонок</button>
                 </div>
             </div>
         </div>
     </header>
-    <div class="block mt-2">
+    <div class="block">
         <div class="container-fluid">  
             <div class="row">
                 <div class="col-12 m-0 p-0">
