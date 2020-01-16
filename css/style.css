@@ -26,6 +26,10 @@ button:active, button:hover, a:active, a:hover {
   max-width: 70%;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 header .nav .my_nav_drop, header .nav .my_nav {
   color: black;
   font-size: 1.4rem;
