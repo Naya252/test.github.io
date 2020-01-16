@@ -17,6 +17,23 @@ button:active, button:hover, a:active, a:hover {
   outline: 0;
 }
 
+/* .navbar {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+} */
+
+.container {
+  max-width: 80% !important;
+  width: 100% !important;
+  padding: 0 !important; 
+}
+
+@media screen and (max-width: 1065px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
 .wrap {
   max-width: 80%;
   margin: 0 auto;
