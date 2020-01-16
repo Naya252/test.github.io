@@ -239,7 +239,7 @@ header .link_btn:hover {
     font-size: .8em;
   }
 
-  header .nav .my_nav_drop, header .nav .my_nav, .link_btn {
+  header .nav .my_nav_drop, header .nav .my_nav, .link_btn, .link_btn2 {
     font-size: .8rem;
   }
 
@@ -260,7 +260,6 @@ header .link_btn:hover {
 
   .link_btn, .link_btn2 {
     padding: .5em;
-    font-size: .8rem;
   }
 
   .slider__banner h1 {
@@ -280,5 +279,14 @@ header .link_btn:hover {
   }
 
 }
+
+@media screen and (max-height: 450px) {
+
+  #btn_order {
+    font-size: .8em;   
+  }
+
+}
+
 
 

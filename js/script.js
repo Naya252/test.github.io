@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slider').slick({
         infinite: true,
         speed: 300,
@@ -13,30 +13,26 @@ $(document).ready(function(){
 });
 
 
-let mediaM1 = document.getElementById('mediaM1');
-let mediaM2 = document.getElementById('mediaM2');
-let mediaM3 = document.getElementById('mediaM3');
+let media1 = document.getElementById('media1');
+let media2 = document.getElementById('media2');
+let media3 = document.getElementById('media3');
+// let btn_order = document.getElementById('btn_order');
 
 // media query event handler
 if (matchMedia) {
-    const mq = window.matchMedia("(max-width: 600px)");
+    const mq = window.matchMedia("(max-width: 430px)");
     mq.addListener(WidthChange);
     WidthChange(mq);
+
 }
-	
+
+
 // media query change
 function WidthChange(mq) {
-	if (mq.matches) {
-        mediaM1.classList.remove("ml-5");
-        mediaM1.classList.remove("mt-5");
-        mediaM2.classList.remove("ml-5");
-        mediaM3.classList.remove("ml-5");
-        
-
-	} else {
-        mediaM1.classList.add("ml-5");
-        mediaM1.classList.add("mt-5");
-        mediaM2.classList.add("ml-5");
-        mediaM3.classList.add("ml-5");        
-	}	
+    if (mq.matches) {
+        media1.classList.add("mt-5");
+    } else {
+        media1.classList.remove("mt-5");
+    }
 }
+
